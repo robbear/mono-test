@@ -11,7 +11,7 @@
     "node": "14.1.0"
   },
   "scripts": {
-    "build": "cd app1 && npm install && npm build && cd ..",
-    "start": "cd app1 && node server/app.js"
+    "build": "cd app1 && npm install && npm run build && cd ..",
+    "start": "cd app1 && npm run start"
   }
 }
