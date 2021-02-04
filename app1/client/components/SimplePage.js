@@ -2,7 +2,6 @@ import ReactiveElement from '../reactive/core/ReactiveElement.js';
 import * as internal from '../reactive/core/internal.js';
 import { templateFrom } from '../reactive/core/htmlLiterals.js';
 import './SpinBox.js';
-import '../../../shared-components/GreenSpinBox.js';
 
 class SimplePage extends ReactiveElement {
   constructor() {
@@ -50,9 +49,6 @@ class SimplePage extends ReactiveElement {
         <div>
         <div>
           SpinBox x <span id="mult"></span> = <span id="computedValue"></span>
-        </div>
-        <div>
-          <green-spin-box id="greenSpin"></spin-box>
         </div>
       </div>
     `
