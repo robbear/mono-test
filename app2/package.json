@@ -71,10 +71,19 @@
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     },
-    "transformIgnorePatterns": ["src/node_modules/(?!@sapper)"],
-    "moduleFileExtensions": ["js"],
-    "moduleDirectories": ["node_modules", "src/node_modules"],
-    "setupFilesAfterEnv": ["@testing-library/jest-dom/extend-expect"]
+    "transformIgnorePatterns": [
+      "src/node_modules/(?!@sapper)"
+    ],
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src/node_modules"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect"
+    ]
   },
   "scripts": {
     "build": "npm run clean && node tasks/buildTimestamp.js && npm run webpack",
@@ -86,6 +95,6 @@
     "webpack-dev": "webpack --config webpack.config.dev.js",
     "format": "prettier --write .",
     "lint": "eslint --cache . --ext js",
-    "postinstall": "npx husky install"
+    "postinstallIGNORE": "npx husky install"
   }
 }

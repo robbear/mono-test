@@ -1,6 +1,6 @@
-import ReactiveElement from '../reactive/core/ReactiveElement.js';
-import * as internal from '../reactive/core/internal.js';
-import { templateFrom } from '../reactive/core/htmlLiterals.js';
+import ReactiveElement from './reactive/core/ReactiveElement.js';
+import * as internal from './reactive/core/internal.js';
+import { templateFrom } from './reactive/core/htmlLiterals.js';
 
 class GreenSpinBox extends ReactiveElement {
   constructor() {
