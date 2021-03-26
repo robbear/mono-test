@@ -3,6 +3,9 @@ import * as internal from '../reactive/core/internal.js';
 import { templateFrom } from '../reactive/core/htmlLiterals.js';
 import './SpinBox.js';
 
+// Shared test
+import sharedString from '../../../shared/string.js';
+
 class SimplePage extends ReactiveElement {
   constructor() {
     super();
@@ -44,8 +47,11 @@ class SimplePage extends ReactiveElement {
         }
       </style>
       <div id="container">
-        <div>        
-          <spin-box id="spin"></spin-box>  
+        <div>
+          ${sharedString}
+        </div>
+        <div>
+          <spin-box id="spin"></spin-box>
         <div>
         <div>
           SpinBox x <span id="mult"></span> = <span id="computedValue"></span>
