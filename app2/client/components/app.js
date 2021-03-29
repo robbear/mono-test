@@ -4,6 +4,9 @@ import React from 'react';
 import { notebookStateReducer } from '../reducer/notebookStateReducer.js';
 import { Cell } from './cell.js';
 
+// Shared test
+import sharedString from '../../../shared/string.js';
+
 // We'll use this context to dispatch state transformations to our notebook state.
 const NotebookDispatchContext = React.createContext();
 
@@ -49,6 +52,7 @@ function App() {
 
   return (
     <NotebookDispatchContext.Provider value={dispatch}>
+      <div>{sharedString}</div>
       <Cells notebook={notebook} />
     </NotebookDispatchContext.Provider>
   );
