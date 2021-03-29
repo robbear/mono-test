@@ -4,7 +4,7 @@
     "node": "14.15.5"
   },
   "scripts": {
-    "build": "cd $APP_BASE && npm ci && npm build && cd ..",
+    "build": "cd $APP_BASE && npm ci && npm run build && cd ..",
     "start": "cd $APP_BASE && npm start && cd .."
   }
 }
