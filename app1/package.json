@@ -29,6 +29,7 @@
     "devbuild": "npm run clean && node tasks/buildTimestamp.js && npm run webpack-dev",
     "start": "node server/app.js",
     "webpack": "webpack --config webpack.config.js",
-    "webpack-dev": "webpack --config webpack.config.dev.js"
+    "webpack-dev": "webpack --config webpack.config.dev.js",
+    "heroku-postbuild": "npm build"
   }
 }
