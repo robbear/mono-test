@@ -1,3 +1,10 @@
 {
-  "name": "rai-ux"
+  "name": "rai-ux",
+  "engines": {
+    "node": "14.15.5"
+  },
+  "scripts": {
+    "build": "cd $APP_BASE && npm build && cd ..",
+    "start": "cd $APP_BASE && npm start && cd .."
+  }
 }
