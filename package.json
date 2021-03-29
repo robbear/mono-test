@@ -5,6 +5,6 @@
   },
   "scripts": {
     "buildX": "cd $APP_BASE && npm ci && npm build && cd ..",
-    "startX": "cd $APP_BASE && npm start && cd .."
+    "start": "cd $APP_BASE && npm start && cd .."
   }
 }
