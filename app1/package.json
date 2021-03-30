@@ -21,7 +21,7 @@
     "webpack-cli": "4.2.0"
   },
   "engines": {
-    "node": "14.1.0"
+    "node": "14.15.5"
   },
   "scripts": {
     "build": "npm run clean && node tasks/buildTimestamp.js && npm run webpack",
@@ -30,6 +30,6 @@
     "start": "node server/app.js",
     "webpack": "webpack --config webpack.config.js",
     "webpack-dev": "webpack --config webpack.config.dev.js",
-    "heroku-postbuild": "npm build"
+    "heroku-postbuild": "cd app1 && npm install && rm -rf client/generated && mkdir -p client/generated && node tasks/buildTimestamp.js && webpack --config webpack.config.js && cd .."
   }
 }
