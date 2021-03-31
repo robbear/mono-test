@@ -96,6 +96,6 @@
     "format": "prettier --write .",
     "lint": "eslint --cache . --ext js",
     "postinstallIGNORE": "npx husky install",
-    "heroku-postbuild": "cd app2 && npm install && npm run build && cd .."
+    "heroku-postbuild": "pushd . && cd app2 && npm install && npm run build && popd"
   }
 }
