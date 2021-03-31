@@ -30,6 +30,6 @@
     "start": "node server/app.js",
     "webpack": "webpack --config webpack.config.js",
     "webpack-dev": "webpack --config webpack.config.dev.js",
-    "heroku-postbuild": "pushd . && cd app1 && npm install && npm run build && popd"
+    "heroku-postbuild": "cd app1 && npm install && npm run build && cd .."
   }
 }
