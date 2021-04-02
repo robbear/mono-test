@@ -11,6 +11,6 @@ NODE_MODULES_CACHE=false
 
 Add buildpacks in the following order:
 ```
-https://github.com/robbear/heroku-buildpack-nodejs-monorepo
+https://github.com/RelationalAI-oss/heroku-buildpack-nodejs-monorepo
 heroku/nodejs
 ```
